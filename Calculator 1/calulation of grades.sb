@@ -1,0 +1,15 @@
+TextWindow.WriteLine ("how many stundents grades do you want converted?") 
+students = TextWindow.Read () 
+For a = 1 to students 
+TextWindow.WriteLine ("please enter the students grade") 
+grade = TextWindow.Read () 
+If grade > 75 Then
+  TextWindow.writeline ("A") 
+ElseIf grade  > 60 then 
+  TextWindow.WriteLine ("B") 
+elseif grade > 35 then 
+  TextWindow.WriteLine ("C") 
+elseif grade < 35 then
+ TextWindow.WriteLine ("D") 
+EndIf 
+EndFor 

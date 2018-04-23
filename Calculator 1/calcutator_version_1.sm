@@ -1,0 +1,61 @@
+ start: 
+TextWindow.WriteLine ("what would you like to calculate?") 
+TextWindow.WriteLine ("type help for menu")
+answer = TextWindow.Read ()
+
+If answer = "help" Then 
+  
+ 
+  TextWindow.WriteLine (" pluss , mineus ")
+  TextWindow.WriteLine ("type return to return to command prompt") 
+  menuanswer = TextWindow.Read () 
+  If  menuanswer = "return" Then 
+    goto start 
+  Else   
+    goto start
+    EndIf 
+       
+
+
+ElseIf answer = "pluss" then 
+  
+  TextWindow.WriteLine ("please enter the first number") 
+  answer1 = TextWindow.Read () 
+  textwindow.WriteLine ("please enter the second number") 
+  answer2 = TextWindow.Read () 
+  answer3 = answer1 + answer2
+  TextWindow.Write (answer1) 
+  TextWindow.Write (" + ") 
+  textwindow.write (answer2) 
+  TextWindow.Write (" = ") 
+  TextWindow.Writeline (answer3) 
+ Goto start 
+  
+  
+  
+elseif answer = "mineus" then 
+  TextWindow.WriteLine ("please enter the first number") 
+  minanswer = textwindow.read () 
+  TextWindow.WriteLine (" please enter the second number") 
+  min2answer = TextWindow.Read() 
+  
+  minanswer3 = minanswer - min2answer
+  
+  TextWindow.Write (minanswer) 
+  TextWindow.Write (" + ")
+ textwindow.write (min2answer)  
+ TextWindow.Write (" = ") 
+ TextWindow.WriteLine (minanswer3)
+ Goto start 
+  
+
+else
+  Goto start 
+
+EndIf 
+
+ 
+
+
+  
+  
